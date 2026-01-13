@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Clínica Larmonie | Odontologia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde: #4f6f64;
+      --dourado: #c9a24d;
+      --claro: #f8f8f6;
+      --texto: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--texto);
+      background: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: linear-gradient(to right, #f8f8f6, #ffffff);
+      padding: 80px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: var(--verde);
+    }
+
+    header p {
+      max-width: 500px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: var(--verde);
+      color: white;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--dourado);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--verde);
+      margin-bottom: 20px;
+    }
+
+    .sobre {
+      background: var(--claro);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      color: var(--verde);
+      margin-bottom: 10px;
+    }
+
+    .profissionais {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    footer {
+      background: var(--verde);
+      color: white;
+      padding: 50px 10%;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--dourado);
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border-radius: 20px;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="whatsapp" target="_blank"
+href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Clínica%20Larmonie.">
+💬
+</a>
+
+<!-- HERO -->
+<header>
+  <div>
+    <h1>Clínica Larmonie</h1>
+    <p>Saúde, estética e cuidado odontológico em perfeita harmonia.</p>
+    <a class="btn" target="_blank"
+       href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Clínica%20Larmonie.">
+       Agendar consulta
+    </a>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section class="sobre">
+  <h2>Sobre a Clínica</h2>
+  <p>
+    A Clínica Larmonie nasceu com o propósito de oferecer um atendimento odontológico completo,
+    acolhedor e personalizado. Nosso foco vai além da estética: buscamos saúde, funcionalidade
+    e bem-estar, respeitando a individualidade de cada paciente.
+  </p>
+</section>
+
+<!-- PROFISSIONAIS -->
+<section>
+  <h2>Nossas Profissionais</h2>
+  <div class="profissionais">
+    <div class="card">
+      <h3>Dra. Lucília</h3>
+      <p><strong>Ortodontia • Invisalign • DTM</strong></p>
+      <p>Tratamentos personalizados para adultos e crianças, com foco em função, conforto e estética.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dra. Natália</h3>
+      <p><strong>Lentes • Clínica Geral</strong></p>
+      <p>Especialista em estética odontológica, com olhar cuidadoso para naturalidade e harmonia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section class="sobre">
+  <h2>Tratamentos</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Ortodontia</h3>
+      <p>Correção da posição dos dentes e da mordida, promovendo saúde e equilíbrio funcional.</p>
+    </div>
+
+    <div class="card">
+      <h3>Invisalign</h3>
+      <p>Alinhadores transparentes, confortáveis e discretos para transformar seu sorriso.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lentes de Resina</h3>
+      <p>Solução estética minimamente invasiva para um sorriso mais harmônico.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lentes de Porcelana</h3>
+      <p>Alta durabilidade, naturalidade e excelência estética.</p>
+    </div>
+
+    <div class="card">
+      <h3>Clínica Geral</h3>
+      <p>Prevenção, cuidados e manutenção da saúde bucal.</p>
+    </div>
+
+    <div class="card">
+      <h3>DTM</h3>
+      <p>Alívio de dores, estalos e desconfortos na articulação mandibular.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section>
+  <h2>Onde estamos</h2>
+  <p>Avenida Brscansin, 1571 – Centro<br>Sorriso – MT</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=Avenida%20Brscansin%201571%20Sorriso%20MT&output=embed">
+  </iframe>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© Clínica Larmonie</p>
+  <p>
+    <a href="https://www.instagram.com/clinica.larmonie" target="_blank">
+      Instagram: @clinica.larmonie
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
