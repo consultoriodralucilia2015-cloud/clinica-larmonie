@@ -11,21 +11,20 @@
   <style>
    .hero {
   display: flex;
-  min-height: 100vh;        
+  min-height: 85vh;
+}
+
+.hero-foto {
+  flex: 1;
+  background-image: url("doutoras-pe.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 40px 40px 0; /* bordas arredondadas do lado direito */
 }
 
 .hero-texto {
   flex: 1;
   padding: 80px 60px;
-}
-
-.hero-foto {
-  flex: 1;
-  min-height: 100vh;        
-  background-image: url("doutoras-pe.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .hero-photo img {
@@ -170,13 +169,14 @@
       border-radius: 20px;
       border: none;
    
-    @media (max-width: 768px) {
+ @media (max-width: 768px) {
   .hero {
     flex-direction: column;
   }
 
   .hero-foto {
     height: 70vh;
+    border-radius: 0 0 40px 40px; /* arredondada só embaixo no celular */
   }
 
   .hero-texto {
@@ -196,17 +196,15 @@ href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20c
 
 <!-- HERO -->
 <header class="hero">
+  <div class="hero-foto"></div>
+
   <div class="hero-texto">
     <h1>Clínica Larmonie</h1>
     <p>Saúde, estética e cuidado odontológico em perfeita harmonia.</p>
-
-    <a class="btn" target="_blank"
-       href="https://wa.me/5566984170793">
+    <a class="btn" target="_blank" href="https://wa.me/5566984170793">
       Agendar consulta
     </a>
   </div>
-
-  <div class="hero-foto"></div>
 </header>
 
 <!-- SOBRE -->
@@ -295,6 +293,7 @@ href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20c
 
 </body>
 </html>
+
 
 
 
