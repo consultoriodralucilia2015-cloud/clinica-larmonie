@@ -10,16 +10,24 @@
 
   <style>
     .hero {
-  display: flex;
+  display: flex 1;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
 
-.hero-image {
-  max-width: 420px;
+.hero-photo {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-photo img {
   width: 100%;
-  border-radius: 20px;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 0;
 }
     :root {
   --verde-mosgo: #2F4F4A;
@@ -158,11 +166,17 @@
       border: none;
     }
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 36px;
-      }
-    }
+   @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-photo img {
+    height: auto;
+    max-height: 420px;
+    width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -277,6 +291,7 @@ href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20c
 
 </body>
 </html>
+
 
 
 
