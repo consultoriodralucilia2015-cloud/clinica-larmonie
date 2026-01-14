@@ -10,17 +10,22 @@
 
   <style>
     .hero {
-  display: flex 1;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  display: flex;
+  min-height: 80vh;
 }
 
-.hero-photo {
+/* Texto da esquerda – não muda */
+.hero-texto {
   flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  padding: 80px 60px;
+}
+
+/* Foto integrada à tela */
+.hero-foto {
+  flex: 1;
+  background-image: url("doutoras-pe.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .hero-photo img {
@@ -164,17 +169,18 @@
       height: 350px;
       border-radius: 20px;
       border: none;
-    }
-
-   @media (max-width: 768px) {
+   
+    @media (max-width: 768px) {
   .hero {
     flex-direction: column;
   }
 
-  .hero-photo img {
-    height: auto;
-    max-height: 420px;
-    width: 100%;
+  .hero-foto {
+    height: 75vh;
+  }
+
+  .hero-texto {
+    padding: 40px 25px;
   }
 }
   </style>
@@ -193,16 +199,14 @@ href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20c
   <div class="hero-texto">
     <h1>Clínica Larmonie</h1>
     <p>Saúde, estética e cuidado odontológico em perfeita harmonia.</p>
-    
+
     <a class="btn" target="_blank"
-       href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Clínica%20Larmonie.">
+       href="https://wa.me/5566984170793">
       Agendar consulta
     </a>
   </div>
 
-<img src="./doutoras-pe.jpg" 
-  alt="Dra. Lucília e Dra. Natália" 
-  class="hero-image">
+  <div class="hero-foto"></div>
 </header>
 
 <!-- SOBRE -->
@@ -291,6 +295,7 @@ href="https://wa.me/5566984170793?text=Olá!%20Gostaria%20de%20agendar%20uma%20c
 
 </body>
 </html>
+
 
 
 
